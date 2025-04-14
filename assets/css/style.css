@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=block');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #C596FF;
+    --secondary-color: #E9DEFF;
+    --border-color: #898989;
+    --white-color: #ffffff;
+    --black-color: #0B0B0B;
+    --input-bg: #242424;
+    --40px: 2.5rem;
+    --36px: 2.25rem;
+    --35px: 2.1875rem;
+    --30px: 1.875rem;
+    --25px: 1.5625rem;
+    --24px: 1.5rem;
+    --22px: 1.375rem;
+    --20px: 1.25rem;
+    --18px: 1.125rem;
+    --16px: 1rem;
+    --15px: 0.9375rem;
+    --14px: 0.875rem;
+    --12px: 0.75rem;
+    --10px: 0.625rem;
+    --8px: 0.5rem;
+    --5px: 0.3125rem;
+    --4px: 0.25rem;
+    --3px: 0.1875rem;
+    --2px: 0.125rem;
+    --1px: 0.0625rem;
+    --0_5px: 0.5rem;
+}
+
+html {
+    font-size: 1.11vw;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea,
+a {
+    font-family: "Raleway", sans-serif;
+}
+
+.main {
+    display: flex;
+}
+
+.main_section {
+    width: 100%;
+    background-color: var(--black-color);
+    overflow-x: hidden;
+}
+
+.sec {
+    margin: 12.5rem 5.375rem 12.5rem 0;
+}
+
+.tittle {
+    font-weight: 500;
+    font-size: 3.75rem;
+    margin-bottom: var(--40px);
+}
+
+.btn {
+    padding: var(--15px) var(--20px);
+    font-size: var(--16px);
+    border: var(--1px) solid var(--primary-color);
+    border-radius: var(--4px);
+    background-color: transparent;
+    color: var(--white-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 9.6px 0px #D1A9EF33;
+}
+
+.btn_primary::after {
+    content: '';
+    background-image: url(../images/arrow_primary.svg);
+    min-width: var(--10px);
+    min-height: var(--10px);
+    margin-left: var(--15px);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_primary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn_secondary {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.btn_secondary::after {
+    content: '';
+    background-image: url(../images/arrow_secondary.svg);
+    min-width: var(--10px);
+    min-height: var(--10px);
+    margin-left: var(--15px);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn_primary:hover::after {
+    background-image: url(../images/arrow_secondary.svg);
+}
+
+.btn_primary:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+/* Nav styles  */
+
+.desktop_nav {
+    width: 15.625rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: var(--40px);
+    background-color: var(--black-color);
+}
+
+.logo {
+    margin-bottom: 5rem;
+}
+
+.logo img {
+    width: 3.125rem;
+    height: 2.095rem;
+}
+
+.nav_links a {
+    font-weight: 400;
+    font-size: var(--20px);
+    line-height: var(--20px);
+    color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--12px);
+}
+
+.nav_links li {
+    list-style: none;
+    padding: var(--12px) 0;
+    margin-bottom: var(--10px);
+}
+
+.nav_links a::before {
+    content: '';
+    display: block;
+    width: 0px;
+    border: var(--1px) solid transparent;
+    border-radius: var(--2px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links a:hover {
+    color: var(--primary-color);
+}
+
+.nav_links a:hover:before {
+    width: var(--14px);
+    opacity: 1;
+    border-color: var(--primary-color);
+}
+
+/* Nav styles ends */
+
+/* Self section  */
+
+#self {
+    margin-top: 6rem;
+}
+
+.helloText {
+    font-size: var(--22px);
+    font-weight: 400;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: var(--10px);
+    margin-bottom: var(--20px);
+}
+
+.dot {
+    display: inline-block;
+    width: var(--4px);
+    height: var(--4px);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.about {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 4.375rem;
+    line-height: 5rem;
+}
+
+.self_btns {
+    margin-top: var(--20px);
+}
+
+.self_btns button {
+    margin-right: var(--20px);
+}
+
+/* Self section ends */
+
+/* Work section */
+.cardWork {
+    display: flex;
+    align-items: center;
+    border-radius: var(--18px);
+    border: var(--1px) solid var(--border-color);
+    box-shadow: 0px 0px 4px 0px var(--primary-color);
+    margin-bottom: 6.25rem;
+    overflow: hidden;
+}
+
+.contentWork {
+    padding: var(--30px);
+    width: 50%;
+}
+
+.contentWork h6 {
+    font-weight: 400;
+    font-size: var(--20px);
+    line-height: 2.75rem;
+    color: var(--primary-color);
+}
+
+.contentWork h4 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: var(--10px) 0;
+}
+
+.contentWork p {
+    font-weight: 300;
+    font-size: var(--16px);
+    margin-bottom: var(--25px);
+    line-height: var(--24px);
+}
+
+.workImg{
+    width: 50%;
+    height: 28rem ;
+}
+
+.workImg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Work section ends */
+
+
+/* Slogan section */
+
+#slogan {
+    margin-right: 0;
+    border-top: var(--1px) solid var(--primary-color);
+    border-bottom: var(--1px) solid var(--primary-color);
+    padding: var(--35px) 0;
+}
+
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.slogan_container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.horizontal-scrolling-items {
+    font-weight: 400;
+    font-size: 5.625rem;
+    line-height: 10.8rem;
+    color: var(--primary-color);
+    display: flex;
+    animation-name: infiniteScroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.horizontal-scrolling-items__item {
+    white-space: nowrap;
+}
+
+/* Slogan section ends*/
