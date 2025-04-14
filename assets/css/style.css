@@ -148,13 +148,15 @@ a {
     background-color: var(--black-color);
 }
 
-.logo {
-    margin-bottom: 5rem;
-}
-
 .logo img {
     width: 3.125rem;
     height: 2.095rem;
+}
+
+.nav_links{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav_links a {
@@ -199,7 +201,13 @@ a {
 /* Self section  */
 
 #self {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-right: 5rem;
 }
 
 .helloText {
@@ -229,10 +237,24 @@ a {
 
 .self_btns {
     margin-top: var(--20px);
+    position: relative;
+}
+
+.self_btns a{
+    all: unset;
 }
 
 .self_btns button {
     margin-right: var(--20px);
+}
+
+.scroll_to{
+    width: 6.625rem;
+    height: 6.625rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
 }
 
 /* Self section ends */
@@ -423,3 +445,196 @@ a {
 }
 
 /* Skills section ends */
+
+/* About section  */
+.about_container {
+    display: flex;
+    gap: 2.813rem;
+}
+
+.about_container p {
+    font-weight: 300;
+    font-size: var(--24px);
+    line-height: var(--32px);
+    margin-bottom: var(--24px);
+}
+
+.about_container p span {
+    font-weight: 600;
+}
+
+.about_content,
+.profile {
+    width: 50%;
+}
+
+.profile img {
+    width: 100%;
+    height: 31rem;
+    object-fit: contain;
+}
+
+/* About section ends */
+
+/* Recognition section  */
+
+
+.recognition_card {
+    display: flex;
+    align-items: center;
+    gap: var(--16px);
+    border-bottom: var(--1px) solid var(--border-color);
+    padding-bottom: var(--40px);
+    margin-bottom: var(--40px);
+}
+
+.recognition_content {
+    width: 70%;
+}
+
+.recognition_content h4 {
+    font-weight: 400;
+    font-size: var(--36px);
+}
+
+.recognition_content p {
+    font-weight: 400;
+    font-size: var(--22px);
+    color: var(--primary-color);
+}
+
+.recognition_img {
+    width: 30%;
+}
+
+.rrd{
+    height: 6.25rem;
+}
+
+.edx_newer_logo, .google_logo, .georgia_tech_logo{
+    height: 4.5rem;
+}
+
+.software_workflow{
+    height: 7.563rem;
+}
+
+.recognition_img img {
+  opacity: 0;
+}
+
+.recognition_card:hover .recognition_img img {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Recognition section ends */
+
+/* Contact section */
+
+#contact {
+    margin-bottom: 5rem;
+}
+
+.contactHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactHeader .tittle {
+    width: 70%;
+}
+
+.contactHeader img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.contactForm {
+    width: 55%;
+}
+
+.formGroup {
+    margin-bottom: var(--40px);
+}
+
+.formGroup label {
+    font-weight: 400;
+    font-size: var(--16px);
+    color: var(--primary-color);
+    margin-bottom: var(--10px);
+    display: block;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: var(--15px) var(--20px);
+    font-size: var(--16px);
+    background-color: #242424;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    width: 100%;
+}
+
+.contactForm .btn {
+    width: 100%;
+}
+
+/* Contact section ends */
+
+/* Footer section  */
+
+footer {
+    padding: 3.375rem 0;
+    padding-right: var(--40px);
+    border-top: var(--1px) solid var(--primary-color);
+    border-bottom: var(--1px) solid var(--primary-color);
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyrights {
+    font-weight: 400;
+    font-size: var(--14px);
+    color: var(--secondary-color);
+}
+
+
+.footer_links ul {
+    display: flex;
+    align-items: center;
+    gap: var(--40px);
+}
+
+.footer_links ul li {
+    list-style: none;
+}
+
+.footer_links ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: var(--16px);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer_links ul li a::after {
+    content: '';
+    background-image: url(../images/arrow_primary.svg);
+    min-width: var(--12px);
+    min-height: var(--12px);
+    margin-left: var(--12px);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/* Footer section ends */

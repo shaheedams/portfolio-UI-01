@@ -12,16 +12,16 @@
 <body>
     <section class="main">
         <section class="desktop_nav">
-            <div class="logo"><img src="./assets/images/logo.svg" alt="Logo"></div>
+            <div class="logo"><a href="#"><img src="./assets/images/logo.svg" alt="Logo"></a></div>
             <nav class="nav_links">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#test">Experience</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#competitive">Skills</a></li>
                     <li><a href="#">Misc</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -34,8 +34,17 @@
                 <p class="about">A product designer from an architectural background, dedicated to crafting ethical,
                     inclusive, and universally accessible solutions.</p>
                 <div class="self_btns">
-                    <button class="btn btn_secondary">Get in touch</button>
-                    <button class="btn btn_primary">My Work</button>
+                    <a href="#contact">
+                        <button class="btn btn_secondary">Get in touch</button>
+                    </a>
+                    <a href="#work">
+                        <button class="btn btn_primary">My Work</button>
+                    </a>
+                    <div class="scrollTo">
+                        <a href="#contact">
+                            <img src="./assets/images/scroll_to.svg" class="scroll_to" alt="scroll_to">
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="sec" id="work">
@@ -62,7 +71,7 @@
                         <button class="btn btn_primary">View case study</button>
                     </div>
                     <div class="workImg">
-                        <img src="./assets/images/cona.png" alt="cona">
+                        <img src="./assets/images/bank.png" alt="bank">
                     </div>
                 </div>
                 <div class="cardWork">
@@ -76,7 +85,7 @@
                         <button class="btn btn_primary">View case study</button>
                     </div>
                     <div class="workImg">
-                        <img src="./assets/images/cona.png" alt="cona">
+                        <img src="./assets/images/design_system.png" alt="design_system">
                     </div>
                 </div>
                 <div class="cardWork">
@@ -88,7 +97,7 @@
                         <button class="btn btn_primary">View case study</button>
                     </div>
                     <div class="workImg">
-                        <img src="./assets/images/cona.png" alt="cona">
+                        <img src="./assets/images/coca.png" alt="coca cola">
                     </div>
                 </div>
             </section>
@@ -169,7 +178,7 @@
                     </div>
                     <div class="competitive_card">
                         <div class="card_img">
-                            <img src="./assets/images/ux_design.svg" alt="card image">
+                            <img src="./assets/images/user_research.svg" alt="card image">
                         </div>
                         <div class="card_content">
                             <h4>User Research</h4>
@@ -179,7 +188,7 @@
                     </div>
                     <div class="competitive_card">
                         <div class="card_img">
-                            <img src="./assets/images/ux_design.svg" alt="card image">
+                            <img src="./assets/images/product_design.svg" alt="card image">
                         </div>
                         <div class="card_content">
                             <h4>Product Design</h4>
@@ -189,7 +198,7 @@
                     </div>
                     <div class="competitive_card">
                         <div class="card_img">
-                            <img src="./assets/images/ux_design.svg" alt="card image">
+                            <img src="./assets/images/strategy.svg" alt="card image">
                         </div>
                         <div class="card_content">
                             <h4>Strategy & Rapid Prototyping</h4>
@@ -237,8 +246,110 @@
                     <div class="skill">Whiteboarding</div>
                 </div>
             </section>
-            <section class="sec"></section>
-            <section class="sec"></section>
+            <section class="sec" id="about">
+                <h4 class="tittle">About</h4>
+                <div class="about_container">
+                    <div class="about_content">
+                        <p>With <span>4+ years of rich experience</span> across brand and product design at companies
+                            large and small, I’ve developed a skill set with breadth and depth. I’m currently working on
+                            <span>design systems and product solutions at
+                                RR Donnelley</span>, a freelance designer for a variety of clients and a close
+                            collaborator with incredible people across multiple disciplines. I’m a classically trained
+                            designer who holds a <span>Bachelor of Science in Interior Design.</span>
+                        </p>
+                        <p>Outside of work, I enjoy playing video games, engaging in thought-provoking philosophy,
+                            storytelling, taking adventures out of the blue and spending time with my family.</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/profile.png" alt="profile">
+                    </div>
+                </div>
+            </section>
+            <section class="sec" id="recognition">
+                <h4 class="tittle">Recognition/Certifications</h4>
+                <div class="recognition_container">
+                    <div class="recognition_card">
+                        <div class="recognition_content">
+                            <h4>Rising Star Award of the Quarter</h4>
+                            <p>(Consecutively 2023 & 2024)</p>
+                        </div>
+                        <div class="recognition_img">
+                            <img src="./assets/images/rr_donnelley_logo.png" class="rrd" alt="rr_donnelley_logo">
+                        </div>
+                    </div>
+
+                    <div class="recognition_card">
+                        <div class="recognition_content">
+                            <h4>Introduction to User Experience Design</h4>
+                        </div>
+                        <div class="recognition_img">
+                            <img src="./assets/images/georgia_tech_logo.png" class="georgia_tech_logo"
+                                alt="georgia_tech_logo">
+                        </div>
+                    </div>
+                    <div class="recognition_card">
+                        <div class="recognition_content">
+                            <h4>WAI0.1x: Introduction to Web Accessibility</h4>
+                        </div>
+                        <div class="recognition_img">
+                            <img src="./assets/images/edx_newer_logo.png" class="edx_newer_logo" alt="edx_newer_logo">
+                        </div>
+                    </div>
+                    <div class="recognition_card">
+                        <div class="recognition_content">
+                            <h4>UX Design Specialization</h4>
+                        </div>
+                        <div class="recognition_img">
+                            <img src="./assets/images/google_logo.png" class="google_logo" alt="google_logo">
+                        </div>
+                    </div>
+                    <div class="recognition_card">
+                        <div class="recognition_content">
+                            <h4>The 9 Software Workflow</h4>
+                        </div>
+                        <div class="recognition_img">
+                            <img src="./assets/images/software_workflow.png" class="software_workflow"
+                                alt="software_workflow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec" id="contact">
+                <div class="contactHeader">
+                    <h4 class="tittle">If my portfolio speaks your language, let's connect!</h4>
+                    <img src="./assets/images/lets_talk_contact.svg" alt="lets talk">
+                </div>
+                <div class="contactForm">
+                    <form action="">
+                        <div class="formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="email">E mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="Message">Message</label>
+                            <textarea type="text" id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button class="btn btn_secondary">Submit</button>
+                    </form>
+                </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer_container">
+                    <div class="copyrights">©2025 – All Rights Reserved</div>
+                    <div class="footer_links">
+                        <ul>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer">GMAIL</a></li>
+                            <li><a href="http://" target="_blank" rel="noopener noreferrer">PHONE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </section>
     </section>
 
