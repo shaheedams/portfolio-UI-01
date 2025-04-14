@@ -17,6 +17,7 @@
     --40px: 2.5rem;
     --36px: 2.25rem;
     --35px: 2.1875rem;
+    --32px: 2rem;
     --30px: 1.875rem;
     --25px: 1.5625rem;
     --24px: 1.5rem;
@@ -272,9 +273,9 @@ a {
     line-height: var(--24px);
 }
 
-.workImg{
+.workImg {
     width: 50%;
-    height: 28rem ;
+    height: 28rem;
 }
 
 .workImg img {
@@ -327,3 +328,98 @@ a {
 }
 
 /* Slogan section ends*/
+
+/* Experience section  */
+
+.comLogo img {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-bottom: var(--15px);
+}
+
+.experience_container {
+    margin-bottom: 5rem;
+}
+
+.experience_container h4 {
+    font-weight: 500;
+    font-size: var(--36px);
+    color: var(--primary-color);
+    margin-bottom: var(--15px);
+}
+
+.experience_container h5 {
+    font-weight: 400;
+    font-size: var(--32px);
+    margin-bottom: var(--15px);
+}
+
+.experience_container ul li {
+    font-weight: 300;
+    font-size: var(--24px);
+    margin-bottom: var(--16px);
+    line-height: var(--32px);
+    margin-left: 2.2rem;
+}
+
+/* Experience section ends */
+
+/* competitive section */
+
+.competitive_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.competitive_card {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: 31.375rem;
+    height: 16.375rem;
+    border-radius: var(--18px);
+    border: var(--1px) solid var(--border-color);
+    padding: 0 3rem;
+}
+
+.competitive_card .card_img img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.competitive_card h4 {
+    font-weight: 500;
+    font-size: var(--24px);
+    color: var(--primary-color);
+    margin-bottom: var(--10px);
+}
+
+.competitive_card p {
+    font-weight: 400;
+    font-size: var(--16px);
+}
+
+/* competitive section ends */
+
+/* Skills section  */
+
+.skills_container {
+    display: flex;
+    align-items: center;
+    gap: var(--20px);
+    flex-wrap: wrap;
+}
+
+.skill {
+    font-weight: 400;
+    font-size: var(--20px);
+    line-height: var(--24px);
+    color: var(--primary-color);
+    padding: var(--10px) var(--12px);
+    border: var(--1px) solid var(--primary-color);
+    border-radius: 6.25rem;
+    width: fit-content;
+}
+
+/* Skills section ends */
