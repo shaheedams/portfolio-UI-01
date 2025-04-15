@@ -73,7 +73,8 @@ a {
 }
 
 .sec {
-    margin: 12.5rem 5.375rem 12.5rem 0;
+    margin: 0 5.375rem 0 0;
+    padding: 6.25rem 0;
 }
 
 .tittle {
@@ -153,7 +154,7 @@ a {
     height: 2.095rem;
 }
 
-.nav_links{
+.nav_links {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -186,11 +187,11 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.nav_links a:hover {
+.nav_links a:hover, .nav_links a.active {
     color: var(--primary-color);
 }
 
-.nav_links a:hover:before {
+.nav_links a:hover:before, .nav_links a.active:before {
     width: var(--14px);
     opacity: 1;
     border-color: var(--primary-color);
@@ -207,6 +208,7 @@ a {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    padding: 0;
     margin-right: 5rem;
 }
 
@@ -240,7 +242,7 @@ a {
     position: relative;
 }
 
-.self_btns a{
+.self_btns a {
     all: unset;
 }
 
@@ -248,7 +250,7 @@ a {
     margin-right: var(--20px);
 }
 
-.scroll_to{
+.scroll_to {
     width: 6.625rem;
     height: 6.625rem;
     position: absolute;
@@ -265,9 +267,14 @@ a {
     align-items: center;
     border-radius: var(--18px);
     border: var(--1px) solid var(--border-color);
-    box-shadow: 0px 0px 4px 0px var(--primary-color);
     margin-bottom: 6.25rem;
     overflow: hidden;
+    margin-left: 0.4rem;
+    cursor: pointer;
+}
+
+.cardWork:hover {
+    box-shadow: 0px 0px 4px 0px var(--primary-color);
 }
 
 .contentWork {
@@ -304,6 +311,11 @@ a {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    object-position: right;
+}
+
+.workImg.center img {
+    object-position: center;
 }
 
 /* Work section ends */
@@ -316,6 +328,7 @@ a {
     border-top: var(--1px) solid var(--primary-color);
     border-bottom: var(--1px) solid var(--primary-color);
     padding: var(--35px) 0;
+    margin-bottom: 6.25rem;
 }
 
 @keyframes infiniteScroll {
@@ -362,7 +375,9 @@ a {
 .experience_container {
     margin-bottom: 5rem;
 }
-
+.experience_container:nth-last-child(1) {
+    margin-bottom: 0;
+}
 .experience_container h4 {
     font-weight: 500;
     font-size: var(--36px);
@@ -403,6 +418,10 @@ a {
     border-radius: var(--18px);
     border: var(--1px) solid var(--border-color);
     padding: 0 3rem;
+}
+
+.competitive_card:hover {
+    box-shadow: 0px 0px 4px 0px #C596FF;
 }
 
 .competitive_card .card_img img {
@@ -446,6 +465,46 @@ a {
 
 /* Skills section ends */
 
+/* misc section */
+
+.miscNavBtns .btn {
+    margin-right: var(--20px);
+}
+
+.miscNavBtns {
+    margin-bottom: var(--40px);
+}
+
+.miscNavBtns .btn.active {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+.miscNavBtns .btn.active::after {
+    background-image: url(../images/arrow_secondary.svg);
+}
+
+.misc_container div {
+    display: flex;
+    gap: var(--20px);
+    margin-bottom: var(--20px);
+}
+
+.misc_container div img{
+    width: 100%;
+    height: 19.438rem;
+}
+
+.misc_container{
+    display: none;
+}
+
+.misc_container.active{
+    display: block;
+}
+
+/* misc section ends */
+
 /* About section  */
 .about_container {
     display: flex;
@@ -486,6 +545,16 @@ a {
     border-bottom: var(--1px) solid var(--border-color);
     padding-bottom: var(--40px);
     margin-bottom: var(--40px);
+    cursor: pointer;
+}
+
+.recognition_card:nth-child(4) {
+    margin-bottom: var(--15px);
+}
+
+.recognition_card:last-child {
+    padding-bottom: var(--15px);
+    margin-bottom: 0;
 }
 
 .recognition_content {
@@ -507,25 +576,27 @@ a {
     width: 30%;
 }
 
-.rrd{
+.rrd {
     height: 6.25rem;
 }
 
-.edx_newer_logo, .google_logo, .georgia_tech_logo{
+.edx_newer_logo,
+.google_logo,
+.georgia_tech_logo {
     height: 4.5rem;
 }
 
-.software_workflow{
+.software_workflow {
     height: 7.563rem;
 }
 
 .recognition_img img {
-  opacity: 0;
+    opacity: 0;
 }
 
 .recognition_card:hover .recognition_img img {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Recognition section ends */
@@ -534,6 +605,7 @@ a {
 
 #contact {
     margin-bottom: 5rem;
+    padding-bottom: 0;
 }
 
 .contactHeader {

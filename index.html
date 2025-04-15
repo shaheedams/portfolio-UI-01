@@ -13,13 +13,13 @@
     <section class="main">
         <section class="desktop_nav">
             <div class="logo"><a href="#"><img src="./assets/images/logo.svg" alt="Logo"></a></div>
-            <nav class="nav_links">
+            <nav class="nav_links nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#self" class="active">Home</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#competitive">Skills</a></li>
-                    <li><a href="#">Misc</a></li>
+                    <li><a href="#misc">Misc</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -96,7 +96,7 @@
                             tech journey.</p>
                         <button class="btn btn_primary">View case study</button>
                     </div>
-                    <div class="workImg">
+                    <div class="workImg center">
                         <img src="./assets/images/coca.png" alt="coca cola">
                     </div>
                 </div>
@@ -246,6 +246,76 @@
                     <div class="skill">Whiteboarding</div>
                 </div>
             </section>
+            <section class="sec" id="misc">
+                <h4 class="tittle">Miscellaneous works</h4>
+                <div class="miscNavBtns">
+                    <button class="btn btn_primary active" data-id="misc1">Websites</button>
+                    <button class="btn btn_primary" data-id="misc2">Apps</button>
+                    <button class="btn btn_primary" data-id="misc3">Graphics</button>
+                </div>
+                <div class="misc_container_main">
+                    <div class="misc_container active" id="misc1">
+                        <div>
+                            <img src="./assets/images/web-image.png" alt="web-image">
+                            <img src="./assets/images/web-image-1.png" alt="web-image">
+                            <img src="./assets/images/web-image-2.png" alt="web-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/web-image-3.png" alt="web-image">
+                            <img src="./assets/images/web-image-4.png" alt="web-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/web-image-5.png" alt="web-image">
+                            <img src="./assets/images/web-image-6.png" alt="web-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/web-image-7.png" alt="web-image">
+                            <img src="./assets/images/web-image-8.png" alt="web-image">
+                            <img src="./assets/images/web-image-9.png" alt="web-image">
+                        </div>
+                    </div>
+                    <div class="misc_container" id="misc2">
+                        <div>
+                            <img src="./assets/images/apps-image.png" alt="app-image">
+                            <img src="./assets/images/apps-image-1.png" alt="app-image">
+                            <img src="./assets/images/apps-image-2.png" alt="app-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/apps-image-3.png" alt="app-image">
+                            <img src="./assets/images/apps-image-4.png" alt="app-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/apps-image-5.png" alt="app-image">
+                            <img src="./assets/images/apps-image-6.png" alt="app-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/apps-image-7.png" alt="app-image">
+                            <img src="./assets/images/apps-image-8.png" alt="app-image">
+                            <img src="./assets/images/apps-image-8.png" alt="app-image">
+                        </div>
+                    </div>
+                    <div class="misc_container" id="misc3">
+                        <div>
+                            <img src="./assets/images/graphic-image.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-1.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-2.png" alt="graphics-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/graphic-image-3.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-4.png" alt="graphics-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/graphic-image-5.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-6.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-7.png" alt="graphics-image">
+                        </div>
+                        <div>
+                            <img src="./assets/images/graphic-image-3.png" alt="graphics-image">
+                            <img src="./assets/images/graphic-image-4.png" alt="graphics-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="sec" id="about">
                 <h4 class="tittle">About</h4>
                 <div class="about_container">
@@ -355,7 +425,8 @@
 
 
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
-    <script src="./assets/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
