@@ -32,6 +32,13 @@ $(document).ready(function () {
         });
     }
 
+    let emailTo = "mohamedshaheed8055@gmail.com";
+    let emailBody = "body"
+    let emailSub = "sub"
+
+    // window.open("mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody);
+    window.open("mailto:"+emailTo+'?subject='+emailSub+'&body='+emailBody);
+
 });
 
 
