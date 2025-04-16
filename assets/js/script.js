@@ -32,12 +32,13 @@ $(document).ready(function () {
         });
     }
 
-    let emailTo = "mohamedshaheed8055@gmail.com";
-    let emailBody = "body"
-    let emailSub = "sub"
-
-    // window.open("mailto:"+emailTo+'?cc='+emailCC+'&subject='+emailSub+'&body='+emailBody);
-    window.open("mailto:"+emailTo+'?subject='+emailSub+'&body='+emailBody);
+    $('#submit_btn').on('click', function (e) {
+        e.preventDefault();
+        let emailTo = "aqeela.fathima12@gmail.com";
+        let emailBody = $('#message').val();
+        let emailSub = `Let's connect ${$('#name').val()}`
+        window.open("mailto:" + emailTo + '?subject=' + emailSub + '&body=' + emailBody);
+    })
 
 });
 
