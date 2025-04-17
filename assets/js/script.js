@@ -32,13 +32,27 @@ $(document).ready(function () {
         });
     }
 
+    // Form submit
     $('#submit_btn').on('click', function (e) {
         e.preventDefault();
         let emailTo = "aqeela.fathima12@gmail.com";
         let emailBody = $('#message').val();
         let emailSub = `Let's connect ${$('#name').val()}`
         window.open("mailto:" + emailTo + '?subject=' + emailSub + '&body=' + emailBody);
-    })
+    });
+
+    // Mobile ScreenCheck
+    window.addEventListener("resize", mobileCheck)
+    mobileCheck();
+    function mobileCheck() {
+        if (window.matchMedia('screen and (max-width: 768px)').matches) {
+            $('.mobile_screen').addClass('active');
+            $('.desktop_screen').removeClass('active');
+        } else {
+            $('.desktop_screen').addClass('active');
+            $('.mobile_screen').removeClass('active');
+        }
+    }
 
 });
 
